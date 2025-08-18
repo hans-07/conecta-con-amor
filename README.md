@@ -554,8 +554,8 @@ Un mundo donde la edad no sea un obstáculo para disfrutar de los beneficios de 
 
 **¿Te gusta el proyecto? ¡Dale una ⭐ en GitHub!**
 
-[🐛 Reportar Bug](https://github.com/tu-usuario/conecta-con-amor/issues) •
-[💡 Sugerir Feature](https://github.com/tu-usuario/conecta-con-amor/issues) •
-[📧 Contacto](mailto:contacto@conectaconamor.com)
+[🐛 Reportar Bug](https://github.com/hans-07/conecta-con-amor/issues) •
+[💡 Sugerir Feature](https://github.com/hans-07/conecta-con-amor/issues) •
+[📧 Contacto](parrahans70@gmail.com)
 
 </div>
