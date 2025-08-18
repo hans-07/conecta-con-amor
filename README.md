@@ -69,7 +69,7 @@
 
 2. **Clonar el repositorio**
    ```bash
-   git clone https://github.com/tu-usuario/conecta-con-amor.git
+   git clone https://github.com/hans-07/conecta-con-amor.git
    cd conecta_con_amor
    ```
 
