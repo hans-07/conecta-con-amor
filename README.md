@@ -9,8 +9,6 @@
 
 **Una aplicación Flutter diseñada especialmente para adultos mayores**
 *Interfaz simple, botones grandes y guía por voz en español*
-
-[📱 Descargar APK](https://github.com/hans-07/conecta-con-amor/releases) 
 </div>
 
 ---
@@ -206,9 +204,6 @@ conecta_con_amor/
 
 **Launcher Integrado:**
 - ✅ **9 aplicaciones populares** preconfiguradas
-- ✅ **Modal bottom sheet** responsivo
-- ✅ **Sistema de lanzamiento robusto** con 3 fallbacks
-- ✅ **Manejo de errores** elegante
 - ✅ **Accesibilidad completa** con TalkBack
 
 **Apps Incluidas:**
@@ -234,13 +229,6 @@ conecta_con_amor/
 - ✅ **Guías paso a paso** con voz
 - ✅ **Botón de repetir** instrucciones
 - ✅ **Navegación intuitiva** entre pasos
-
-**Características de Accesibilidad:**
-- Anuncios de voz automáticos
-- Etiquetas Semantics completas
-- Compatible con TalkBack/VoiceOver
-- Feedback multimodal (voz + vibración + visual)
-
 </details>
 
 ---
@@ -287,31 +275,6 @@ graph TD
     J --> M[Apps Externas]
 ```
 
-### 🔒 **Permisos Requeridos**
-
-#### Android (`android/app/src/main/AndroidManifest.xml`)
-```xml
-<!-- Permisos básicos -->
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.VIBRATE" />
-
-<!-- Permisos opcionales (solo si se usan) -->
-<uses-permission android:name="android.permission.CALL_PHONE" />
-<uses-permission android:name="android.permission.SEND_SMS" />
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-```
-
-#### iOS (`ios/Runner/Info.plist`)
-```xml
-<!-- Descripción de uso de micrófono (para TTS) -->
-<key>NSMicrophoneUsageDescription</key>
-<string>Esta app usa el micrófono para funciones de accesibilidad</string>
-
-<!-- Descripción de acceso a fotos -->
-<key>NSPhotoLibraryUsageDescription</key>
-<string>Esta app accede a fotos para mostrar la galería</string>
-```
-
 ## 🎯 Público Objetivo
 
 ### 👥 **Usuarios Principales**
@@ -347,20 +310,9 @@ flutter test
 # Generar reporte de cobertura
 flutter test --coverage
 ```
-
-### 📱 **Dispositivos Probados**
-- **Android**: 8.0+ (API 26+)
-- **iOS**: 12.0+
-- **Pantallas**: 4.7" a 6.7"
-- **Resoluciones**: 720p a 1440p
-
 ---
-
-### 📝 **Guías de Contribución**
 
 #### Estilo de Código
 - Seguir las [convenciones de Dart](https://dart.dev/guides/language/effective-dart)
 - Usar `flutter format` antes de cada commit
 - Mantener cobertura de pruebas > 80%
-
-
