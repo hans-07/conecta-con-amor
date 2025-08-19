@@ -10,8 +10,7 @@
 **Una aplicación Flutter diseñada especialmente para adultos mayores**
 *Interfaz simple, botones grandes y guía por voz en español*
 
-[📱 Descargar APK](#-instalación-y-ejecución) • [📖 Documentación](#-funcionalidades-principales) • [🤝 Contribuir](#-contribuir)
-
+[📱 Descargar APK](https://github.com/hans-07/conecta-con-amor/releases) 
 </div>
 
 ---
@@ -40,11 +39,6 @@
 - **Launcher integrado**: Acceso a 9 aplicaciones populares
 - **Lanzamiento inteligente**: Sistema robusto con múltiples fallbacks
 - **Apps incluidas**: Cámara, Música, Mapas, Gmail, Chrome, YouTube, Facebook, Play Store, Configuración
-
-### 🚨 **Seguridad y Emergencias**
-- **Función de emergencia**: Envío rápido de SMS de ayuda
-- **Contactos de emergencia**: Configuración fácil de números importantes
-- **Sin permisos complejos**: Privacidad y seguridad garantizadas
 
 ## 🚀 Instalación y Ejecución
 
@@ -150,15 +144,6 @@ conecta_con_amor/
 | **ContactsScreen** | Gestión de contactos | Agregar, eliminar, llamar, WhatsApp |
 | **TutorialScreens** | Tutoriales interactivos | Guías paso a paso con voz y accesibilidad |
 | **VoiceService** | Servicio de voz | TTS en español, anuncios contextuales |
-| **EmergencyService** | Servicio de emergencias | SMS automáticos, contactos de emergencia |
-
-## 🎨 Principios de Diseño
-
-### 🎯 **Accesibilidad Universal**
-- **Contraste alto**: Cumple con WCAG 2.1 AA
-- **Tipografía escalable**: 18-32px con soporte para zoom del sistema
-- **Espaciado táctil**: Mínimo 44x44px para elementos interactivos
-- **Iconos universales**: Símbolos reconocibles internacionalmente
 
 ### 🌈 **Paleta de Colores**
 ```css
@@ -185,9 +170,6 @@ conecta_con_amor/
 <summary>Ver características completas</summary>
 
 - **5 botones principales** organizados en grid 2x2 + 1
-- **Saludo personalizado** con hora del día
-- **Footer motivacional** con mensajes rotativos
-- **Accesibilidad completa** con anuncios de voz
 - **Animaciones suaves** para feedback visual
 
 **Botones incluidos:**
@@ -196,44 +178,6 @@ conecta_con_amor/
 - 👥 **Contactos** → Gestión completa de favoritos
 - 📸 **Fotos** → Acceso a galería del sistema
 - 📱 **Más Apps** → Launcher con 9 aplicaciones populares
-
-</details>
-
-### 📞 **Sistema de Llamadas**
-<details>
-<summary>Ver características completas</summary>
-
-**Tutorial Interactivo:**
-- ✅ Guía paso a paso con voz
-- ✅ Simulación de marcado
-- ✅ Teclado nativo del dispositivo
-- ✅ Feedback visual y auditivo
-- ✅ Botón de ayuda contextual
-
-**Funcionalidades:**
-- Abre el marcador telefónico nativo
-- Sin permisos especiales requeridos
-- Compatible con todos los dispositivos
-- Integración con contactos favoritos
-
-</details>
-
-### 💬 **WhatsApp Integrado**
-<details>
-<summary>Ver características completas</summary>
-
-**Tutorial Completo:**
-- ✅ 6 pasos interactivos
-- ✅ Simulación de selección de contacto
-- ✅ Campo de texto con teclado nativo
-- ✅ Botón de envío animado
-- ✅ Anuncios de voz contextuales
-
-**Características:**
-- Detección automática de instalación
-- Integración directa con la app
-- Selección de contactos simplificada
-- Mensajes predefinidos opcionales
 
 </details>
 
@@ -247,7 +191,6 @@ conecta_con_amor/
 - ✅ **Función "Deshacer"** por 3 segundos
 - ✅ **Menú contextual** (Llamar, WhatsApp, Eliminar)
 - ✅ **Contactos de emergencia** marcados especialmente
-- ✅ **Persistencia local** con SharedPreferences
 
 **Interfaz:**
 - Lista vertical con avatares coloridos
@@ -269,27 +212,15 @@ conecta_con_amor/
 - ✅ **Accesibilidad completa** con TalkBack
 
 **Apps Incluidas:**
-- 📷 **Cámara** → com.android.camera2
-- 🎵 **Música** → com.google.android.music
-- 🗺️ **Mapas** → com.google.android.apps.maps
-- 📧 **Gmail** → com.google.android.gm
-- 🌐 **Chrome** → com.android.chrome
+- 📷 **Cámara** → Intent nativo `IMAGE_CAPTURE`
+- 🎵 **Música** → Intent nativo `MUSIC_PLAYER`
+- 🗺️ **Mapas** → Intent nativo `geo:` y `APP_MAPS`
+- 📧 **Gmail** → Intent nativo `mailto:` y `SENDTO`
+- 🌐 **Chrome** → Intent nativo `VIEW` con URL
 - 📺 **YouTube** → com.google.android.youtube
 - 👥 **Facebook** → com.facebook.katana
 - 🛒 **Play Store** → com.android.vending
-- ⚙️ **Configuración** → com.android.settings
-
-</details>
-
-### 🚨 **Sistema de Emergencias**
-<details>
-<summary>Ver características completas</summary>
-
-- **SMS automáticos** a contactos predefinidos
-- **Mensajes personalizables** según la situación
-- **Sin permisos de ubicación** (privacidad garantizada)
-- **Activación rápida** con confirmación
-- **Lista de contactos de emergencia** configurable
+- ⚙️ **Configuración** → Intent nativo `SETTINGS`
 
 </details>
 
@@ -311,6 +242,8 @@ conecta_con_amor/
 - Feedback multimodal (voz + vibración + visual)
 
 </details>
+
+---
 
 ## 🔧 Dependencias y Tecnologías
 
@@ -423,61 +356,6 @@ flutter test --coverage
 
 ---
 
-## 🚀 Roadmap y Futuras Mejoras
-
-### 🔄 **Versión Actual (v1.0)**
-- ✅ Funcionalidades básicas implementadas
-- ✅ Tutoriales interactivos completos
-- ✅ Accesibilidad total con TalkBack
-- ✅ Gestión de contactos avanzada
-- ✅ Launcher de aplicaciones integrado
-
-### 📋 **Próximas Versiones**
-
-#### v1.1 - Mejoras de UX
-- [ ] **Temas personalizables** (claro/oscuro)
-- [ ] **Tamaño de fuente ajustable**
-- [ ] **Más idiomas** (inglés, portugués)
-- [ ] **Backup en la nube** de contactos
-
-#### v1.2 - Funcionalidades Avanzadas
-- [ ] **Videollamadas** simplificadas
-- [ ] **Recordatorios de medicamentos**
-- [ ] **Integración con calendarios**
-- [ ] **Modo familia** para configuración remota
-
-#### v2.0 - Inteligencia Artificial
-- [ ] **Asistente de voz** personalizado
-- [ ] **Reconocimiento de comandos**
-- [ ] **Sugerencias inteligentes**
-- [ ] **Detección de emergencias automática**
-
----
-
-## 🤝 Contribuir al Proyecto
-
-### 🛠️ **Cómo Contribuir**
-
-1. **Fork** el repositorio
-2. **Clona** tu fork localmente
-   ```bash
-   git clone https://github.com/tu-usuario/conecta-con-amor.git
-   ```
-3. **Crea** una rama para tu feature
-   ```bash
-   git checkout -b feature/nueva-funcionalidad
-   ```
-4. **Desarrolla** y **prueba** tus cambios
-5. **Commit** con mensajes descriptivos
-   ```bash
-   git commit -m "feat: agregar nueva funcionalidad X"
-   ```
-6. **Push** a tu fork
-   ```bash
-   git push origin feature/nueva-funcionalidad
-   ```
-7. **Crea** un Pull Request detallado
-
 ### 📝 **Guías de Contribución**
 
 #### Estilo de Código
@@ -485,77 +363,4 @@ flutter test --coverage
 - Usar `flutter format` antes de cada commit
 - Mantener cobertura de pruebas > 80%
 
-#### Commits Semánticos
-```
-feat: nueva funcionalidad
-fix: corrección de bug
-docs: actualización de documentación
-style: cambios de formato
-refactor: refactorización de código
-test: agregar o modificar pruebas
-```
 
-#### Issues y Bugs
-- Usar las plantillas proporcionadas
-- Incluir pasos para reproducir
-- Especificar dispositivo y versión de Android/iOS
-- Adjuntar capturas de pantalla si es relevante
-
-### 🏆 **Reconocimientos**
-
-Agradecemos a todos los contribuidores que han hecho posible este proyecto:
-
-<!-- Aquí se pueden agregar contribuidores cuando los haya -->
-
----
-
-## 📄 Licencia
-
-```
-MIT License
-
-Copyright (c) 2024 Conecta con Amor
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
----
-
-## 💝 Hecho con Amor
-
-<div align="center">
-
-**Desarrollado pensando en nuestros adultos mayores**
-*Para que puedan mantenerse conectados con sus seres queridos de manera fácil y segura*
-
-### 🌟 **Misión**
-Democratizar el acceso a la tecnología para adultos mayores, eliminando barreras y creando puentes digitales entre generaciones.
-
-### 💡 **Visión**
-Un mundo donde la edad no sea un obstáculo para disfrutar de los beneficios de la tecnología moderna.
-
----
-
-**¿Te gusta el proyecto? ¡Dale una ⭐ en GitHub!**
-
-[🐛 Reportar Bug](https://github.com/hans-07/conecta-con-amor/issues) •
-[💡 Sugerir Feature](https://github.com/hans-07/conecta-con-amor/issues) •
-[📧 Contacto](parrahans70@gmail.com)
-
-</div>
