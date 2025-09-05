@@ -12,32 +12,6 @@
 </div>
 
 ---
-
-## ✨ Características Principales
-
-### 🎯 **Diseño Inclusivo**
-- **Interfaz ultra-simple**: Botones grandes (120x120px) y fáciles de tocar
-- **Tipografía accesible**: Texto de 18-32px para mejor legibilidad
-- **Colores contrastantes**: Diseño optimizado para problemas de visión
-- **Espaciado generoso**: Elementos bien separados para evitar toques accidentales
-
-### 🗣️ **Accesibilidad Completa**
-- **Guía por voz**: Instrucciones claras en español con TTS
-- **TalkBack compatible**: Etiquetas Semantics en todos los elementos
-- **Anuncios contextuales**: Feedback de voz para cada acción
-- **Botón de ayuda**: Repetir instrucciones en cualquier momento
-
-### 📞 **Comunicación Simplificada**
-- **Llamadas fáciles**: Acceso directo al marcador telefónico
-- **WhatsApp integrado**: Envío de mensajes paso a paso
-- **Contactos favoritos**: Lista personalizable con opciones de eliminar
-- **Tutoriales interactivos**: Guías completas para llamadas y WhatsApp
-
-### 📱 **Más Aplicaciones**
-- **Launcher integrado**: Acceso a 9 aplicaciones populares
-- **Lanzamiento inteligente**: Sistema robusto con múltiples fallbacks
-- **Apps incluidas**: Cámara, Música, Mapas, Gmail, Chrome, YouTube, Facebook, Play Store, Configuración
-
 ## 🚀 Instalación y Ejecución
 
 ### 📋 Prerrequisitos
@@ -133,104 +107,6 @@ conecta_con_amor/
 ├── 📄 pubspec.yaml                       # Dependencias y configuración
 └── 📖 README.md                          # Este archivo
 ```
-
-### 📋 Descripción de Componentes
-
-| Componente | Descripción | Funcionalidades |
-|------------|-------------|-----------------|
-| **HomeScreen** | Pantalla principal | Launcher con 5 botones principales + Más Apps |
-| **ContactsScreen** | Gestión de contactos | Agregar, eliminar, llamar, WhatsApp |
-| **TutorialScreens** | Tutoriales interactivos | Guías paso a paso con voz y accesibilidad |
-| **VoiceService** | Servicio de voz | TTS en español, anuncios contextuales |
-
-### 🌈 **Paleta de Colores**
-```css
-/* Colores principales */
---primary-green: #4CAF50    /* Llamadas */
---whatsapp-green: #25D366   /* WhatsApp */
---emergency-red: #F44336    /* Emergencias */
---orange-apps: #FF9800      /* Más Apps */
---purple-photos: #9C27B0    /* Fotos */
---blue-help: #2196F3        /* Ayuda */
-```
-
-### 📐 **Sistema de Grid**
-- **Grid 2x2**: Pantalla principal (5 botones + Más Apps)
-- **Grid 3x3**: Modal de aplicaciones
-- **Lista vertical**: Contactos y tutoriales
-
----
-
-## 📋 Funcionalidades Detalladas
-
-### 🏠 **Pantalla Principal**
-<details>
-<summary>Ver características completas</summary>
-
-- **5 botones principales** organizados en grid 2x2 + 1
-- **Animaciones suaves** para feedback visual
-
-**Botones incluidos:**
-- 📞 **Llamadas** → Tutorial + Marcador nativo
-- 💬 **WhatsApp** → Tutorial + Integración directa
-- 👥 **Contactos** → Gestión completa de favoritos
-- 📸 **Fotos** → Acceso a galería del sistema
-- 📱 **Más Apps** → Launcher con 9 aplicaciones populares
-
-</details>
-
-### 👥 **Gestión de Contactos**
-<details>
-<summary>Ver características completas</summary>
-
-**Funcionalidades Avanzadas:**
-- ✅ **Agregar contactos** con formulario simple
-- ✅ **Eliminar contactos** con confirmación segura
-- ✅ **Función "Deshacer"** por 3 segundos
-- ✅ **Menú contextual** (Llamar, WhatsApp, Eliminar)
-- ✅ **Contactos de emergencia** marcados especialmente
-
-**Interfaz:**
-- Lista vertical con avatares coloridos
-- Botones de acción en menú desplegable
-- Diálogos de confirmación claros
-- Feedback visual y auditivo completo
-
-</details>
-
-### 📱 **Más Aplicaciones**
-<details>
-<summary>Ver características completas</summary>
-
-**Launcher Integrado:**
-- ✅ **9 aplicaciones populares** preconfiguradas
-- ✅ **Accesibilidad completa** con TalkBack
-
-**Apps Incluidas:**
-- 📷 **Cámara** → Intent nativo `IMAGE_CAPTURE`
-- 🎵 **Música** → Intent nativo `MUSIC_PLAYER`
-- 🗺️ **Mapas** → Intent nativo `geo:` y `APP_MAPS`
-- 📧 **Gmail** → Intent nativo `mailto:` y `SENDTO`
-- 🌐 **Chrome** → Intent nativo `VIEW` con URL
-- 📺 **YouTube** → com.google.android.youtube
-- 👥 **Facebook** → com.facebook.katana
-- 🛒 **Play Store** → com.android.vending
-- ⚙️ **Configuración** → Intent nativo `SETTINGS`
-
-</details>
-
-### ❓ **Centro de Ayuda**
-<details>
-<summary>Ver características completas</summary>
-
-**Tutoriales Interactivos:**
-- ✅ **Tutorial de WhatsApp** (6 pasos)
-- ✅ **Tutorial de Llamadas** (5 pasos)
-- ✅ **Guías paso a paso** con voz
-- ✅ **Botón de repetir** instrucciones
-- ✅ **Navegación intuitiva** entre pasos
-</details>
-
 ---
 
 ## 🔧 Dependencias y Tecnologías
@@ -274,30 +150,7 @@ graph TD
     J --> L[WhatsApp]
     J --> M[Apps Externas]
 ```
-
-## 🎯 Público Objetivo
-
-### 👥 **Usuarios Principales**
-- **Adultos mayores (65+ años)** con poca experiencia tecnológica
-- **Personas con discapacidades visuales** que necesitan accesibilidad
-- **Usuarios con problemas motores** que requieren botones grandes
-- **Familias** que buscan facilitar la comunicación con adultos mayores
-
-### 📊 **Casos de Uso**
-- **Comunicación familiar**: Llamadas y WhatsApp simplificados
-- **Emergencias**: Contacto rápido con familiares y servicios
-- **Entretenimiento**: Acceso fácil a fotos y aplicaciones
-- **Aprendizaje**: Tutoriales paso a paso para nuevas tecnologías
-
 ---
-
-## 🧪 Testing y Calidad
-
-### ✅ **Pruebas Implementadas**
-- **Pruebas unitarias** para servicios críticos
-- **Pruebas de widgets** para componentes principales
-- **Pruebas de integración** para flujos completos
-- **Pruebas de accesibilidad** con TalkBack/VoiceOver
 
 ### 🔍 **Análisis de Código**
 ```bash
