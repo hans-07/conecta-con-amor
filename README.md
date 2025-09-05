@@ -49,7 +49,6 @@
    flutter devices
    ```
 
-### 🏃‍♂️ Ejecutar la Aplicación
 
 #### Modo Desarrollo
 ```bash
